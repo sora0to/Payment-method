@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const newCard = document.getElementById('new__card');
     const submitCard = document.getElementById('submit_card');
+    const cancelCard = document.getElementById('cancel__card');
 
     // popup
     addPeymentMethod.addEventListener('click', function () {
@@ -20,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
             popup.style.display = 'none';
         }
     });
+
+    cancelCard.addEventListener('click', function () {
+        popup.style.display = 'none';
+    })
 
     // create new card
     submitCard.addEventListener('click', function (event) {
