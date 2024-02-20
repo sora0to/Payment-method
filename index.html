@@ -25,9 +25,17 @@
             </div>
             <h1>Choose your payment method</h1>
 
-            <div id="new__card">
-                    
+            <div class="new__card" id="new__card">
+                <div class="card__row1 row">
+                    <img class="images__card" src="img/credit-card.png" alt="card">
+                    <div class="number__card"></div>
+                </div>
+                <div class="card__row2 row">
+                    <div>Expiries</div>
+                    <div class="expiries__card"></div>
+                </div>
             </div>
+
             <div class="PaymentMethod">
                 <div class="AddPeymentMethod">
                     <img src="img/credit-card.png" alt="">
@@ -44,8 +52,8 @@
                                 <div class="form__row row1">
                                     <div class="form-group first-form">
                                         <label for="card_holder">Name:</label>
-                                        <input type="text" id="card_holder" name="card_holder"
-                                            placeholder="Имя на карте" required>
+                                        <input type="text" id="card_holder" name="card_holder" placeholder="Name:"
+                                            required>
                                     </div>
                                     <div class="form-group">
                                         <label for="expiry_date">Expiration:</label>
@@ -67,7 +75,8 @@
                                     </div>
                                 </div>
                                 <div class="section__btn">
-                                    <button class="btn__cancel btn-card btn" id="cancel__card" type="reset">Cancel</button>
+                                    <button class="btn__cancel btn-card btn" id="cancel__card"
+                                        type="reset">Cancel</button>
                                     <button class="btn__submit btn-card btn" id="submit_card">Submit</button>
                                 </div>
                             </form>

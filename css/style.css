@@ -58,7 +58,7 @@ body {
     margin: 10px 0 30px 0;
 }
 
-.AddPeymentMethod {
+.AddPeymentMethod, .new__card {
     display: flex;
     margin: 30px 0;
     padding: 30px;
@@ -80,7 +80,7 @@ body {
     font-weight: 500;
 }
 
-.AddPeymentMethod:hover {
+.AddPeymentMethod:hover, .new__card:hover {
     outline: 3px solid #03c7dd;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
@@ -169,7 +169,7 @@ body {
     display: flex;
 }
 
-.first-form{
+.first-form {
     width: 80%;
     margin-right: 20px;
 }
@@ -197,11 +197,11 @@ input[type="text"] {
 }
 
 .btn-card {
-
     margin: 10px 30px 0 0;
     height: 65px;
 }
-.btn-card:last-child{
+
+.btn-card:last-child {
     margin-right: 0;
 }
 
@@ -212,4 +212,26 @@ input[type="text"] {
 
 .btn__cancel:hover {
     background-color: #fff;
+}
+
+/* new card */
+.new__card {
+   display: none;
+}
+
+.images__card {
+    width: 30px;
+    height: 100%;
+    margin: 0 30px 0 0;
+}
+
+.row {
+    margin: 20px 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.expiries__card {
+    margin: 0 20px;
 }

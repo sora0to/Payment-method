@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const submitCard = document.getElementById('submit_card');
     const cancelCard = document.getElementById('cancel__card');
 
+    const numberCard = document.querySelector('.number__card');
+    const expiriesCard = document.querySelector('.expiries__card');
+
     // popup
     addPeymentMethod.addEventListener('click', function () {
         popup.style.display = 'block';
@@ -35,11 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const cardNumber = document.getElementById('card_number').value;
         const cvv = document.getElementById('cvv').value;
 
-        const newElement = document.createElement('p');
+        numberCard.textContent = cardNumber;
+        expiriesCard.textContent = expiryDate;
 
-        newElement.textContent = `Card Holder: ${cardHolder}, Expiry Date: ${expiryDate}, Card Number: ${cardNumber}, CVV: ${cvv}`;
-
-        newCard.appendChild(newElement);
+        newCard.style.display = 'block';
 
         popup.style.display = 'none';
     });
